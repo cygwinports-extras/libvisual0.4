@@ -1,0 +1,12 @@
+ORIG_PN=libvisual
+
+DESCRIPTION="Plugin-based audio visualization library"
+HOMEPAGE="http://localhost.nl/~synap/libvisual/"
+SRC_URI="http://easynews.dl.sourceforge.net/${ORIG_PN}/${ORIG_PN}-${PV}.tar.bz2"
+
+CYGCONF_ARGS='--disable-static --enable-extra-optimization'
+
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS='setup devel'
+PKG_CONTENTS[0]='usr/bin/ usr/share/'
+PKG_CONTENTS[1]='usr/include/ usr/lib/'

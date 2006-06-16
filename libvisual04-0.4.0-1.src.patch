@@ -1,0 +1,43 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x 'Makefile.in*' -x configure libvisual-0.4.0-orig/libvisual/lvconfig.h libvisual-0.4.0/libvisual/lvconfig.h
+--- libvisual-0.4.0-orig/libvisual/lvconfig.h	2006-03-20 12:42:59.000000000 -0600
++++ libvisual-0.4.0/libvisual/lvconfig.h	1969-12-31 18:00:00.000000000 -0600
+@@ -1,39 +0,0 @@
+-/* lvconfig.h
+- *
+- * This is a generated file.  Please modify 'configure.ac'
+- */
+-
+-#ifndef __LV_CONFIG_H__
+-#define __LV_CONFIG_H__
+-
+-#ifndef __cplusplus
+-# define LV_HAVE_ISO_VARARGS	(1)
+-#endif
+-
+-/* gcc-2.95.x supports both gnu style and ISO varargs, but if -ansi
+- * is passed ISO vararg support is turned off, and there is no work
+- * around to turn it on, so we unconditionally turn it off.
+- */
+-#if __GNUC__ == 2 && __GNUC_MINOR__ == 95
+-#  undef LV_HAVE_ISO_VARARGS
+-#endif
+-
+-#define LV_HAVE_GNUC_VARARGS	(1)
+-
+-#define VISUAL_BIG_ENDIAN	(0)
+-#define VISUAL_LITTLE_ENDIAN	(1)
+-
+-typedef unsigned int visual_size_t;
+-#define VISUAL_SIZE_T_FORMAT	"u"
+-
+-#define VISUAL_ARCH_X86
+-
+-#define VISUAL_OS_LINUX
+-
+-#define VISUAL_HAVE_THREADS
+-
+-#define VISUAL_THREAD_MODEL_POSIX
+-
+-
+-#endif /* LV_CONFIG_H */
+-

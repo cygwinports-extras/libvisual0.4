@@ -1,0 +1,128 @@
+libvisual04
+------------------------------------------
+Libvisual is a library that acts as a middle layer between
+applications that want audio visualisation and audio visualisation
+plugins.
+
+By writing an audio visualisation plugin for libvisual
+every application that uses libvisual is capable of using
+this plugin. The application handles the end drawing of
+the graphics and thus rendering done by plugins using
+libvisual can be drawn everywhere. That is but not limited
+to: ascii art, sdl, on gl object as a surface, alpha blended
+or just, anywhere.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libintl3-0.14.5-1
+
+Build requirements:
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.90-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://localhost.nl/~synap/libvisual/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/libvisual/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libvisual04-0.4.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libvisual04-0.4.0-X.cygport all
+
+This will create:
+  /usr/src/libvisual04-0.4.0-X-src.tar.bz2
+  /usr/src/libvisual04-0.4.0-X.tar.bz2
+  /usr/src/libvisual04-devel-0.4.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygvisual-0.4-0.dll
+  /usr/share/doc/Cygwin/libvisual04-0.4.0.README
+  /usr/share/doc/libvisual04-0.4.0/ABOUT-NLS
+  /usr/share/doc/libvisual04-0.4.0/AUTHORS
+  /usr/share/doc/libvisual04-0.4.0/COPYING
+  /usr/share/doc/libvisual04-0.4.0/ChangeLog
+  /usr/share/doc/libvisual04-0.4.0/INSTALL
+  /usr/share/doc/libvisual04-0.4.0/NEWS
+  /usr/share/doc/libvisual04-0.4.0/README
+  /usr/share/doc/libvisual04-0.4.0/TODO
+  /usr/share/locale/es_AR/LC_MESSAGES/libvisual-0.4.mo
+  /usr/share/locale/es_ES/LC_MESSAGES/libvisual-0.4.mo
+
+Files included in the devel package:
+
+  /usr/include/libvisual-0.4/libvisual/libvisual.h
+  /usr/include/libvisual-0.4/libvisual/lv_actor.h
+  /usr/include/libvisual-0.4/libvisual/lv_audio.h
+  /usr/include/libvisual-0.4/libvisual/lv_bin.h
+  /usr/include/libvisual-0.4/libvisual/lv_bits.h
+  /usr/include/libvisual-0.4/libvisual/lv_bmp.h
+  /usr/include/libvisual-0.4/libvisual/lv_buffer.h
+  /usr/include/libvisual-0.4/libvisual/lv_cache.h
+  /usr/include/libvisual-0.4/libvisual/lv_collection.h
+  /usr/include/libvisual-0.4/libvisual/lv_color.h
+  /usr/include/libvisual-0.4/libvisual/lv_common.h
+  /usr/include/libvisual-0.4/libvisual/lv_config.h
+  /usr/include/libvisual-0.4/libvisual/lv_cpu.h
+  /usr/include/libvisual-0.4/libvisual/lv_defines.h
+  /usr/include/libvisual-0.4/libvisual/lv_error.h
+  /usr/include/libvisual-0.4/libvisual/lv_event.h
+  /usr/include/libvisual-0.4/libvisual/lv_fourier.h
+  /usr/include/libvisual-0.4/libvisual/lv_gl.h
+  /usr/include/libvisual-0.4/libvisual/lv_hashlist.h
+  /usr/include/libvisual-0.4/libvisual/lv_hashmap.h
+  /usr/include/libvisual-0.4/libvisual/lv_input.h
+  /usr/include/libvisual-0.4/libvisual/lv_keysym.h
+  /usr/include/libvisual-0.4/libvisual/lv_libvisual.h
+  /usr/include/libvisual-0.4/libvisual/lv_list.h
+  /usr/include/libvisual-0.4/libvisual/lv_log.h
+  /usr/include/libvisual-0.4/libvisual/lv_math.h
+  /usr/include/libvisual-0.4/libvisual/lv_mem.h
+  /usr/include/libvisual-0.4/libvisual/lv_morph.h
+  /usr/include/libvisual-0.4/libvisual/lv_object.h
+  /usr/include/libvisual-0.4/libvisual/lv_os.h
+  /usr/include/libvisual-0.4/libvisual/lv_palette.h
+  /usr/include/libvisual-0.4/libvisual/lv_param.h
+  /usr/include/libvisual-0.4/libvisual/lv_plugin.h
+  /usr/include/libvisual-0.4/libvisual/lv_random.h
+  /usr/include/libvisual-0.4/libvisual/lv_rectangle.h
+  /usr/include/libvisual-0.4/libvisual/lv_ringbuffer.h
+  /usr/include/libvisual-0.4/libvisual/lv_songinfo.h
+  /usr/include/libvisual-0.4/libvisual/lv_thread.h
+  /usr/include/libvisual-0.4/libvisual/lv_time.h
+  /usr/include/libvisual-0.4/libvisual/lv_transform.h
+  /usr/include/libvisual-0.4/libvisual/lv_types.h
+  /usr/include/libvisual-0.4/libvisual/lv_ui.h
+  /usr/include/libvisual-0.4/libvisual/lv_utils.h
+  /usr/include/libvisual-0.4/libvisual/lv_video.h
+  /usr/include/libvisual-0.4/libvisual/lvconfig.h
+  /usr/lib/libvisual-0.4.dll.a
+  /usr/lib/libvisual-0.4.la
+  /usr/lib/pkgconfig/libvisual-0.4.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.4.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
