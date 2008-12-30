@@ -1,6 +1,7 @@
 category: Audio
-requires: cygwin libintl3
-sdesc: "Plugin-based audio visualization library (0.4 runtime)"
+requires: cygwin libintl8
+external-source: libvisual0.4
+sdesc: "Plugin-based audio visualization library (runtime)"
 ldesc: "Libvisual is a library that acts as a middle layer between
 applications that want audio visualisation and audio visualisation
 plugins.

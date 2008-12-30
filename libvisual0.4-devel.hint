@@ -1,7 +1,7 @@
 category: Audio
-requires: cygwin gettext
-external-source: libvisual04
-sdesc: "Plugin-based audio visualization library (0.4 development)"
+requires: cygwin libvisual0.4_0 gettext
+external-source: libvisual0.4
+sdesc: "Plugin-based audio visualization library (development)"
 ldesc: "Libvisual is a library that acts as a middle layer between
 applications that want audio visualisation and audio visualisation
 plugins.

@@ -1,4 +1,4 @@
-libvisual04
+libvisual0.4
 ------------------------------------------
 Libvisual is a library that acts as a middle layer between
 applications that want audio visualisation and audio visualisation
@@ -13,60 +13,58 @@ to: ascii art, sdl, on gl object as a surface, alpha blended
 or just, anywhere.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libintl3-0.14.5-1
+  cygwin-1.5.25-15
+  libintl8-0.17-2
 
 Build requirements:
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.90-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
-  sed-4.1.4-1
+  autoconf2.5-2.63-1
+  automake1.8-1.8.5-4
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical website:
   http://localhost.nl/~synap/libvisual/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/libvisual/
+  http://downloads.sourceforge.net/libvisual/
 
 -------------------------------------------
 
 Build instructions:
-  unpack libvisual04-0.4.0-X-src.tar.bz2
+  unpack libvisual0.4-0.4.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libvisual04-0.4.0-X.cygport all
+  cygport ./libvisual0.4-0.4.0-X.cygport all
 
 This will create:
-  /usr/src/libvisual04-0.4.0-X-src.tar.bz2
-  /usr/src/libvisual04-0.4.0-X.tar.bz2
-  /usr/src/libvisual04-devel-0.4.0-X.tar.bz2
+  /usr/src/libvisual0.4-0.4.0-X-src.tar.bz2
+  /usr/src/libvisual0.4-devel-0.4.0-X.tar.bz2
+  /usr/src/libvisual0.4_0-0.4.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(libvisual0.4_0)
   /usr/bin/cygvisual-0.4-0.dll
-  /usr/share/doc/Cygwin/libvisual04-0.4.0.README
-  /usr/share/doc/libvisual04-0.4.0/ABOUT-NLS
-  /usr/share/doc/libvisual04-0.4.0/AUTHORS
-  /usr/share/doc/libvisual04-0.4.0/COPYING
-  /usr/share/doc/libvisual04-0.4.0/ChangeLog
-  /usr/share/doc/libvisual04-0.4.0/INSTALL
-  /usr/share/doc/libvisual04-0.4.0/NEWS
-  /usr/share/doc/libvisual04-0.4.0/README
-  /usr/share/doc/libvisual04-0.4.0/TODO
+  /usr/share/doc/libvisual0.4-0.4.0/ABOUT-NLS
+  /usr/share/doc/libvisual0.4-0.4.0/AUTHORS
+  /usr/share/doc/libvisual0.4-0.4.0/COPYING
+  /usr/share/doc/libvisual0.4-0.4.0/ChangeLog
+  /usr/share/doc/libvisual0.4-0.4.0/INSTALL
+  /usr/share/doc/libvisual0.4-0.4.0/NEWS
+  /usr/share/doc/libvisual0.4-0.4.0/README
+  /usr/share/doc/libvisual0.4-0.4.0/TODO
   /usr/share/locale/es_AR/LC_MESSAGES/libvisual-0.4.mo
   /usr/share/locale/es_ES/LC_MESSAGES/libvisual-0.4.mo
 
-Files included in the devel package:
-
+(libvisual0.4-devel)
   /usr/include/libvisual-0.4/libvisual/libvisual.h
   /usr/include/libvisual-0.4/libvisual/lv_actor.h
   /usr/include/libvisual-0.4/libvisual/lv_audio.h
@@ -119,6 +117,9 @@ Files included in the devel package:
 ------------------
 
 Port Notes:
+
+----- version 0.4.0-2 -----
+Fixed plugin loading.
 
 ----- version 0.4.0-1 -----
 Initial release for Cygwin.

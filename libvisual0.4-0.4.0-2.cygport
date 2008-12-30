@@ -1,0 +1,17 @@
+ORIG_PN=libvisual
+
+DESCRIPTION="Plugin-based audio visualization library"
+HOMEPAGE="http://localhost.nl/~synap/libvisual/"
+SRC_URI="http://easynews.dl.sourceforge.net/${ORIG_PN}/${ORIG_PN}-${PV}.tar.bz2"
+PATCH_URI="0.4.0-not-win32.patch"
+
+PKG_NAMES="${PN} ${PN}_0 ${PN}-devel"
+libvisual0_4_0_CONTENTS='usr/bin/*-0.4-0.dll usr/share/'
+libvisual0_4_devel_CONTENTS='usr/include/ usr/lib/'
+
+DISTCLEANFILES="libvisual/lvconfig.h"
+DIFF_EXCLUDES="m4 po"
+
+WANT_AUTOMAKE=1.8
+CYGCONF_ARGS="--enable-extra-optimization"
+MAKEOPTS+=" DOMAIN=libvisual-0.4"

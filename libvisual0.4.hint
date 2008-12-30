@@ -1,0 +1,13 @@
+category: Audio
+sdesc: "Plugin-based audio visualization library (sources)"
+ldesc: "Libvisual is a library that acts as a middle layer between
+applications that want audio visualisation and audio visualisation
+plugins.
+
+By writing an audio visualisation plugin for libvisual
+every application that uses libvisual is capable of using
+this plugin. The application handles the end drawing of
+the graphics and thus rendering done by plugins using
+libvisual can be drawn everywhere. That is but not limited
+to ascii art, sdl, on gl object as a surface, alpha blended
+or just, anywhere."

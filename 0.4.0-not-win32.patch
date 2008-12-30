@@ -1,0 +1,34 @@
+--- origsrc/libvisual-0.4.0/configure.ac	2006-02-20 06:43:49.000000000 -0600
++++ src/libvisual-0.4.0/configure.ac	2008-12-29 11:40:21.784375000 -0600
+@@ -78,7 +78,7 @@
+ esac
+ 
+ AC_MSG_CHECKING([for Win32])
+-if test x$lv_cygwin = xyes || test x$lv_mingw = xyes ; then
++if test x$lv_mingw = xyes ; then
+   lv_win32=yes
+ else
+   lv_win32=no
+@@ -712,7 +712,7 @@
+         if test x$lv_cygwin = xyes ; then
+                 cat >>$outfile <<_______EOF
+ 
+-#define VISUAL_WITH_CYGWIN
++#define VISUAL_OS_CYGWIN
+ _______EOF
+         fi
+ 
+--- origsrc/libvisual-0.4.0/libvisual/lv_plugin.c	2006-03-04 06:32:47.000000000 -0600
++++ src/libvisual-0.4.0/libvisual/lv_plugin.c	2008-12-29 11:30:35.362500000 -0600
+@@ -605,7 +605,11 @@
+ 		snprintf (temp, 1023, "%s/%s", dir, namelist[i]->d_name);
+ 
+ 		len = strlen (temp);
++#if defined(VISUAL_OS_CYGWIN)
++		if (len > 4 && (strncmp (&temp[len - 4], ".dll", 4) == 0))
++#else
+ 		if (len > 3 && (strncmp (&temp[len - 3], ".so", 3) == 0))
++#endif
+ 			ref = visual_plugin_get_references (temp, &cnt);
+ 
+ 		if (ref != NULL) {
