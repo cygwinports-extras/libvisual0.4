@@ -12,6 +12,6 @@ libvisual0_4_devel_CONTENTS='usr/include/ usr/lib/'
 DISTCLEANFILES="libvisual/lvconfig.h"
 DIFF_EXCLUDES="m4 po"
 
-WANT_AUTOMAKE=1.8
+WANT_AUTOMAKE=1.9
 CYGCONF_ARGS="--enable-extra-optimization"
 MAKEOPTS+=" DOMAIN=libvisual-0.4"
