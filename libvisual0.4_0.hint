@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libgcc1 libintl8
+requires: libgcc1 libintl8
 external-source: libvisual0.4
 sdesc: "Plugin-based audio visualization library (runtime)"
 ldesc: "Libvisual is a library that acts as a middle layer between
